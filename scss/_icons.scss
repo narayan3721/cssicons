@@ -1,0 +1,56 @@
+@import "../scss/colors";
+.ci {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+
+}
+.ci-check {
+    -webkit-transform: scaleX(-1) rotate(-35deg);
+    transform: scaleX(-1) rotate(-35deg);
+    font-family: arial;
+}
+.ci-circle-filled {
+    width: calc(.7em + 2px);
+    height: calc(.7em + 2px);
+    background-color: #f6ae2d;
+    border-radius: 50%;
+}
+.ci-circle-outline {
+    width: .7em;
+    height:.7em;
+    border:2px solid $yellow;
+    border-radius: 50%;
+}
+
+%ci-arrow-common {
+    border: 8px solid transparent;
+}
+
+.ci-arrow-left-filled {
+    @extend %ci-arrow-common;
+    border-right: 8px solid $yellow;
+    margin-left: -8px;
+}
+.ci-arrow-right-filled {
+    @extend %ci-arrow-common;
+    border-left:8px solid $yellow;
+    margin-right: -8px;
+}
+.ci-arrow-up-filled {
+    @extend %ci-arrow-common;
+    border-bottom: 8px solid $yellow;
+    margin-top: -8px;
+}
+.ci-arrow-down-filled {
+    @extend %ci-arrow-common;
+    border-top: 8px solid $yellow;
+    margin-bottom: -8px;
+}
+.ci-plus {
+    color:$yellow;
+}
