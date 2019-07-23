@@ -466,7 +466,7 @@ template {
   color: #f6ae2d;
 }
 
-.cir-cross {
+.ci-cross {
   border: 2px solid #f6ae2d;
   height: 1.3em;
   width: 1.3em;
@@ -477,7 +477,7 @@ template {
   font-family: arial;
 }
 
-.rectangle {
+.ci-alert {
   position: relative;
   width: .051em;
   height: .051em;
@@ -487,12 +487,88 @@ template {
   border-radius: 5px;
 }
 
-.rectangle::after {
+.ci-alert::after {
   content: "!";
   position: absolute;
   color: #444;
   font-size: .8em;
   left: -3px;
   top: 5px;
+}
+
+.ci-long-right-arrow {
+  display: inline-block;
+  width: 1em;
+  height: 0.2em;
+  background-color: #f6ae2d;
+  position: relative;
+}
+
+.ci-long-right-arrow:after {
+  content: "";
+  border: 0.3em solid transparent;
+  border-left: 0.3em solid #f6ae2d;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.ci-long-left-arrow {
+  display: inline-block;
+  width: 1em;
+  height: 0.2em;
+  background-color: #f6ae2d;
+  position: relative;
+}
+
+.ci-long-left-arrow:before {
+  content: "";
+  border: 0.3em solid transparent;
+  border-right: 0.3em solid #f6ae2d;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.ci-long-top-arrow {
+  display: inline-block;
+  width: 0.2em;
+  height: 1em;
+  background-color: #f6ae2d;
+  position: relative;
+}
+
+.ci-long-top-arrow:before {
+  content: "";
+  border: 0.3em solid transparent;
+  border-bottom: 0.3em solid #f6ae2d;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.ci-long-bottom-arrow {
+  display: inline-block;
+  width: 0.2em;
+  height: 1em;
+  background-color: #f6ae2d;
+  position: relative;
+}
+
+.ci-long-bottom-arrow:before {
+  content: "";
+  border: 0.3em solid transparent;
+  border-top: 0.3em solid #f6ae2d;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=style.css.map */

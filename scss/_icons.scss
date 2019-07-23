@@ -17,7 +17,7 @@
 .ci-circle-filled {
     width: calc(.7em + 2px);
     height: calc(.7em + 2px);
-    background-color: #f6ae2d;
+    background-color: $yellow;
     border-radius: 50%;
 }
 .ci-circle-outline {
@@ -54,8 +54,8 @@
 .ci-plus {
     color:$yellow;
 }
-.cir-cross {
-    border: 2px solid #f6ae2d;
+.ci-cross {
+    border: 2px solid $yellow;
     height: 1.3em;
     width: 1.3em;
     border-radius: 50%;
@@ -63,26 +63,8 @@
     line-height: 1.25em;
     position: relative;
     font-family: arial;
-    // &::after{
-    //     content: "";
-    //     position: absolute;    
-    //     width: .4em;
-    //     height: .4em;
-    //     border-right: .2em solid;
-    //     border-bottom: .2em solid;
-    //     transform: rotate(139deg) translate(7px, -6px);
-    // }
-    // &::before{
-    //     content: "";
-    //     position: absolute;
-    //     width: .4em;
-    //     height: .4em;
-    //     border-right: .2em solid;
-    //     border-bottom: .2em solid;
-    //     transform: rotate(-41deg) translate(-16px, -2px);
-    // }
 }
-.rectangle {
+.ci-alert {
     position: relative;
     width: .051em;
     height: .051em;
@@ -99,4 +81,74 @@
         top: 5px;
 
     }
+}
+
+
+
+.ci-long-right-arrow {
+    display:inline-block;
+    width:1em;
+    height:0.2em;
+    background-color:$yellow;
+    position:relative;
+    &:after {
+        content:"";
+        border:0.3em solid transparent;
+        border-left:0.3em solid $yellow;
+        position:absolute;
+        left:100%;
+        top:50%;
+        transform:translateY(-50%);
+      }
+}
+
+.ci-long-left-arrow {
+    display:inline-block;
+    width:1em;
+    height:0.2em;
+    background-color:$yellow;
+    position:relative;
+    &:before {
+        content:"";
+        border:0.3em solid transparent;
+        border-right:0.3em solid $yellow;
+        position:absolute;
+        right:100%;
+        top:50%;
+        transform:translateY(-50%);
+      }
+}
+
+.ci-long-top-arrow {
+    display:inline-block;
+    width:0.2em;
+    height:1em;
+    background-color:$yellow;
+    position:relative;
+    &:before {
+        content:"";
+        border:0.3em solid transparent;
+        border-bottom:0.3em solid $yellow;
+        position:absolute;
+        left:50%;
+        bottom:100%;
+        transform:translateX(-50%);
+      }
+}
+
+.ci-long-bottom-arrow {
+    display:inline-block;
+    width:0.2em;
+    height:1em;
+    background-color:$yellow;
+    position:relative;
+    &:before {
+        content:"";
+        border:0.3em solid transparent;
+        border-top:0.3em solid $yellow;
+        position:absolute;
+        left:50%;
+        top:100%;
+        transform:translateX(-50%);
+      }
 }
